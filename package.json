@@ -1,6 +1,6 @@
 {
   "name": "deploy-galeart",
-  "homepage": "https://galeart.github.io/GaleArtWeb/"
+  "homepage": "https://galeart.github.io/GaleArtWeb/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
