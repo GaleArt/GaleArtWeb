@@ -1,6 +1,7 @@
 {
   "name": "react-todo",
   "version": "0.0.0",
+  "homepage": "https://galeart.github.io/GaleArtWeb/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
