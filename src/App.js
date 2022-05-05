@@ -139,10 +139,10 @@ const App = () => {
         </button>
       )}
 	  <DarkModeToggle/>
-	  
+
     </div>
 	<div class="footer">
-		<a href='https://github.com/ilyasbelaoud' target='_blank' rel="noopener noreferrer"><FaGithub className='github'/></a>
+		<a href='https://github.com/GaleArt' target='_blank' rel="noopener noreferrer"><FaGithub className='github'/></a>
 	</div>
 	</>
   );
