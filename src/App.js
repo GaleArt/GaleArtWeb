@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Какого числа шашлык мангал?
         </p>
         <a
           className="App-link"
-          href="https://galeart.github.io/GaleArtWeb/"
+          href="https://github.com/GaleArt"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Huec
+          GitHub
         </a>
         <div class="scene">
       	  <div class="space">
