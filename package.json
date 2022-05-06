@@ -2,7 +2,7 @@
   "name": "deploy-galeart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://galeart.github.io/GaleArtWeb/"
+  "homepage": "https://galeart.github.io/GaleArtWeb/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
