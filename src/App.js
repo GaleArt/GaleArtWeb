@@ -17,6 +17,12 @@ function App() {
         >
           Huec
         </a>
+        <div class="scene">
+      	  <div class="space">
+      		  <span></span><span></span><span></span>
+      		  <div class="comet"><div class="comet-inner"></div></div>
+      	  </div>
+        </div>
       </header>
     </div>
   );
