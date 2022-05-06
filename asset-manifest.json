@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/GaleArtWeb/static/css/main.073c9b0a.css",
-    "main.js": "/GaleArtWeb/static/js/main.3449afc8.js",
+    "main.css": "/GaleArtWeb/static/css/main.2cc8b4d8.css",
+    "main.js": "/GaleArtWeb/static/js/main.cf3cfdd7.js",
     "static/media/logo.svg": "/GaleArtWeb/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/GaleArtWeb/index.html",
-    "main.073c9b0a.css.map": "/GaleArtWeb/static/css/main.073c9b0a.css.map",
-    "main.3449afc8.js.map": "/GaleArtWeb/static/js/main.3449afc8.js.map"
+    "main.2cc8b4d8.css.map": "/GaleArtWeb/static/css/main.2cc8b4d8.css.map",
+    "main.cf3cfdd7.js.map": "/GaleArtWeb/static/js/main.cf3cfdd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3449afc8.js"
+    "static/css/main.2cc8b4d8.css",
+    "static/js/main.cf3cfdd7.js"
   ]
 }
