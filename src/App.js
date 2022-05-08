@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
 
 function App() {
   return (
@@ -17,6 +17,8 @@ function App() {
         >
           GitHub
         </a>
+
+        
         <div class="scene">
       	  <div class="space">
       		  <span></span><span></span><span></span>
