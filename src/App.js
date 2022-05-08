@@ -1,33 +1,71 @@
-import logo from './logo.svg';
 import './style/App.css';
+import React from "react";
+import Title from "./components/todo/Title";
+import AddTodo from "./components/todo/AddTodo";
+import Todo from "./components/todo/Todo";
+import {
+  collection,
+  query,
+  onSnapshot,
+  doc,
+  updateDoc,
+  deleteDoc,
+} from "firebase/firestore";
+import { db } from "./components/firebase";
 
 function App() {
+  const [todos, setTodos] = React.useState([]);
+
+  React.useEffect(() => {
+    const q = query(collection(db, "todos"));
+    const unsub = onSnapshot(q, (querySnapshot) => {
+      let todosArray = [];
+      querySnapshot.forEach((doc) => {
+        todosArray.push({ ...doc.data(), id: doc.id });
+      });
+      setTodos(todosArray);
+    });
+    return () => unsub();
+  }, []);
+
+  const handleEdit = async (todo, title) => {
+    await updateDoc(doc(db, "todos", todo.id), { title: title });
+  };
+  const toggleComplete = async (todo) => {
+    await updateDoc(doc(db, "todos", todo.id), { completed: !todo.completed });
+  };
+  const handleDelete = async (id) => {
+    await deleteDoc(doc(db, "todos", id));
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Какого числа шашлык мангал?
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/GaleArt"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-
-        
-        <div class="scene">
-      	  <div class="space">
-      		  <span></span><span></span><span></span>
-      		  <div class="comet"><div class="comet-inner"></div></div>
-      	  </div>
+      <div className="todo-box">
+        <div>
+          <Title />
         </div>
-      </header>
+        <div>
+          <AddTodo />
+        </div>
+        <div className="todo_container">
+          {todos.map((todo) => (
+            <Todo
+              key={todo.id}
+              todo={todo}
+              toggleComplete={toggleComplete}
+              handleDelete={handleDelete}
+              handleEdit={handleEdit}
+            />
+          ))}
+        </div>
+
+        <div class="scene">
+          <div class="space">
+            <span></span><span></span><span></span>
+              <div class="comet"><div class="comet-inner"></div></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
 export default App;
