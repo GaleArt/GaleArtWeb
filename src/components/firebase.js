@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
+  apiKey: "AIzaSyAqkzY0drfri0E04PoxE_JYYbDg41LK56Y",
+  authDomain: "galeartweb.firebaseapp.com",
   databaseURL: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
+  projectId: "galeartweb",
+  storageBucket: "galeartweb.appspot.com",
+  messagingSenderId: "1000816075745",
+  appId: "1:1000816075745:web:25749f9a3899d82764a8a0",
   measurementId: "",
 };
 
