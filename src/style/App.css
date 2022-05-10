@@ -7,12 +7,12 @@
   text-align: center;
   margin: 10px 0;
   font-weight: 400;
+  letter-spacing: 0.04em;
 }
 form {
-  max-width: 500px;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 10px 20px;
-  margin-top: 5px;
   border-radius: 5px;
   border: 1px solid white;
 }
@@ -20,7 +20,7 @@ form h3 {
   text-align: center;
 }
 form input {
-  width: 100%;
+  width: 80vw;
   padding: 10px 5px;
   outline: none;
   font-size: 16px;
@@ -47,10 +47,11 @@ form input {
 }
 
 .todo_container {
-  width: 50%;
   margin: 0 auto;
 }
 .todo {
+  margin: 0 auto;
+  width: 90vw;
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 5px;
@@ -61,7 +62,6 @@ form input {
 }
 .todo input {
   cursor: pointer;
-  width: 50%;
   background: none;
   border: none;
   outline: none;
@@ -72,34 +72,34 @@ form input {
 .button-complete,
 .button-delete,
 .button-edit {
+  background: none;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 50%;
 }
 #i {
-  font-size: 35px;
+  font-size: 25px;
 }
 .button-complete {
   color: #95faa3;
-  margin-right: 10px;
 }
 .button-edit {
   color: #56cfff;
-  margin-right: 10px;
 }
 .button-delete {
   color: rgb(255, 122, 98);
 }
 @media screen and (max-width: 667px) {
   .task_container {
-    width: 90%;
   }
   .task {
-    margin-right: 0px;
   }
 }
 input:focus,
 button:focus {
   outline: none;
+}
+.list {
+  width: 70vw;
 }
