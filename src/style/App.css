@@ -5,12 +5,12 @@
 .title h1 {
   color: white;
   text-align: center;
-  margin: 10px 0;
+  margin: 1vw 0;
   font-weight: 400;
   letter-spacing: 0.04em;
 }
 form {
-  max-width: 90vw;
+  max-width: 80vw;
   margin: 0 auto;
   padding: 10px 20px;
   border-radius: 5px;
@@ -20,8 +20,8 @@ form h3 {
   text-align: center;
 }
 form input {
-  width: 80vw;
-  padding: 10px 5px;
+  width: 75vw;
+  padding: 1vw 1vw;
   outline: none;
   font-size: 16px;
   font-weight: 500;
@@ -33,6 +33,7 @@ form input {
 .btn_container {
   text-align: center;
   margin-bottom: 10px;
+  min-width: 15vw;
 }
 .btn_container button {
   border: 1px solid white;
@@ -51,7 +52,7 @@ form input {
 }
 .todo {
   margin: 0 auto;
-  width: 90vw;
+  width: 80vw;
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 5px;
@@ -77,9 +78,10 @@ form input {
   outline: none;
   cursor: pointer;
   border-radius: 50%;
+  width: 7vw;
 }
 #i {
-  font-size: 25px;
+  font-size: 7vw;
 }
 .button-complete {
   color: #95faa3;
@@ -90,16 +92,10 @@ form input {
 .button-delete {
   color: rgb(255, 122, 98);
 }
-@media screen and (max-width: 667px) {
-  .task_container {
-  }
-  .task {
-  }
-}
 input:focus,
 button:focus {
   outline: none;
 }
 .list {
-  width: 70vw;
+  width: 55vw;
 }
