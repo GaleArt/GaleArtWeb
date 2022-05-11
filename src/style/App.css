@@ -99,3 +99,10 @@ button:focus {
 .list {
   width: 55vw;
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
