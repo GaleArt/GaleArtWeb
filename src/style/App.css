@@ -100,7 +100,8 @@ button:focus {
   width: 55vw;
 }
 .footer {
-  position: absolute;
+  color: white;
+  fill: white;
   bottom: 0;
   width: 100%;
   text-align: center;
