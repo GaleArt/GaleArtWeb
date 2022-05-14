@@ -9,34 +9,38 @@
   font-weight: 400;
   letter-spacing: 0.04em;
 }
-form {
-  max-width: 80vw;
+
+
+
+.addtodo {
+  width: 90vw;
+  display: flex;
+  padding: 2vw;
   margin: 0 auto;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid white;
+  border-radius: 1.5vw;
+  border: 0.1vw solid white;
+  flex-direction: column;
 }
-form h3 {
-  text-align: center;
+
+.addtodo__container {
+  display: flex;
+  justify-content: space-around;
 }
-form input {
-  width: 75vw;
-  padding: 1vw 1vw;
+.addtodo__input {
+  display: flex;
+  width: 70vw;
   outline: none;
   font-size: 16px;
   font-weight: 500;
 }
-.todo-box {}
-.input_container {
-  margin-bottom: 20px;
-}
-.btn_container {
+.addtodo__btn__add {
+  display: flex;
+  width: 10vw;
   text-align: center;
-  margin-bottom: 10px;
-  min-width: 15vw;
+  margin-left: 2vw;
 }
-.btn_container button {
-  border: 1px solid white;
+.addtodo__btn__add button {
+  border: 0.1vw solid white;
   background: none;
   color: white;
   padding: 10px 20px;
@@ -46,8 +50,31 @@ form input {
   cursor: pointer;
   font-weight: 500;
 }
+.addtodo__filter {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5vw;
+}
+.addtodo__btn__active,
+.addtodo__btn__complete,
+.addtodo__btn__all {
+  border: 0.1vw solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1vw;
+  width: 15vw;
+  text-align: center;
+}
 
-.todo_container {
+
+
+
+.todo__box {
+
+}
+.todo__container {
   margin: 0 auto;
 }
 .todo {
@@ -59,7 +86,7 @@ form input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid white;
+  border: 0.1vw solid white;
 }
 .todo input {
   cursor: pointer;
@@ -70,9 +97,10 @@ form input {
   font-weight: 500;
   color: white;
 }
-.button-complete,
-.button-delete,
-.button-edit {
+
+.todo__btn__complete,
+.todo__btn__delete,
+.todo__btn__edit {
   background: none;
   border: none;
   outline: none;
@@ -83,20 +111,20 @@ form input {
 #i {
   font-size: 7vw;
 }
-.button-complete {
+.todo__btn__complete {
   color: #95faa3;
 }
-.button-edit {
+.todo__btn__edit {
   color: #56cfff;
 }
-.button-delete {
+.todo__btn__delete {
   color: rgb(255, 122, 98);
 }
 input:focus,
 button:focus {
   outline: none;
 }
-.list {
+.todo__input {
   width: 55vw;
 }
 .footer {

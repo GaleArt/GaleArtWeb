@@ -20,23 +20,23 @@ export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,})
         style={{ textDecoration: todo.completed && "line-through" }}
         type="text"
         value={todo.title === "" ? newTitle : todo.title}
-        className="list"
+        className="todo__input"
         onChange={handleChange}
       />
       <div>
         <button
-          className="button-complete"
+          className="todo__btn__complete"
           onClick={() => toggleComplete(todo)}
         >
           <CheckCircleIcon id="i" />
         </button>
         <button
-          className="button-edit"
+          className="todo__btn__edit"
           onClick={() => handleEdit(todo, newTitle)}
         >
           <EditIcon id="i" />
         </button>
-        <button className="button-delete" onClick={() => handleDelete(todo.id)}>
+        <button className="todo__btn__delete" onClick={() => handleDelete(todo.id)}>
           <DeleteIcon id="i" />
         </button>
       </div>

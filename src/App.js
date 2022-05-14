@@ -39,14 +39,14 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="todo-box">
+      <div className="todo__box">
         <div>
           <Title />
         </div>
         <div>
           <AddTodo />
         </div>
-        <div className="todo_container">
+        <div className="todo__container">
           {todos.map((todo) => (
             <Todo
               key={todo.id}
