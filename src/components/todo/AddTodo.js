@@ -16,23 +16,23 @@ export default function AddTodo() {
     }
   };
   return (
-    <form className="addtodo" onSubmit={handleSubmit}>
-      <div className="addtodo__container">
+    <form className="todo-add" onSubmit={handleSubmit}>
+      <div className="todo-add__container">
         <input
           type="text"
           placeholder="Введи задачу.."
-          className="addtodo__input"
+          className="todo-add__input"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <div className="addtodo__btn__add">
+        <div className="todo-add__btn-add">
           <button>Добавить</button>
         </div>
       </div>
-      <div className="addtodo__filter">
-        <div className="addtodo__btn__active">Активные</div>
-        <div className="addtodo__btn__complete">Выполнено</div>
-        <div className="addtodo__btn__all">Все</div>
+      <div className="todo-add__filter">
+        <div className="todo-add__btn-active">Активные</div>
+        <div className="todo-add__btn-complete">Выполнено</div>
+        <div className="todo-add__btn-all">Все</div>
       </div>
     </form>
   );

@@ -1,83 +1,23 @@
+/* Const */
+$btn-todo: 30px; /* Размер кнопок в списке todo */
+/* Components */
 .App {
+    display: grid;
     align-items: center;
     justify-content: center;
-  }
-  .title h1 {
-    color: white;
-    text-align: center;
-    margin: 1vw 0;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-  }
-  
-  .addtodo {
-    width: 90vw;
-    display: flex;
-    padding: 2vw;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.box {
+    display: grid;
+}
+
+.todo { 
+    /* Todo.js */
     margin: 0 auto;
-    border-radius: 1.5vw;
-    border: 0.1vw solid white;
-    flex-direction: column;
-  }
-  
-  .addtodo__container {
-    display: flex;
-    justify-content: space-around;
-  }
-  .addtodo__input {
-    display: flex;
-    width: 70vw;
-    outline: none;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .addtodo__btn__add {
-    display: flex;
-    width: 10vw;
-    text-align: center;
-    margin-left: 2vw;
-  }
-  .addtodo__btn__add button {
-    border: 0.1vw solid white;
-    background: none;
-    color: white;
-    padding: 10px 20px;
-    outline: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: 500;
-  }
-  .addtodo__filter {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 5vw;
-  }
-  .addtodo__btn__active,
-  .addtodo__btn__complete,
-  .addtodo__btn__all {
-    border: 0.1vw solid white;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 1vw;
-    width: 15vw;
-    text-align: center;
-  }
-  
-  
-  
-  
-  .todo__box {
-  
-  }
-  .todo__container {
-    margin: 0 auto;
-  }
-  .todo {
-    margin: 0 auto;
-    width: 80vw;
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -85,52 +25,120 @@
     justify-content: space-between;
     align-items: center;
     border: 0.1vw solid white;
+    &__title h2 {
+        color: white;
+        text-align: center;
+        margin: 1vw 0;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+    }
+    input {
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        width: 55vw;
+    }
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: $btn-todo;
+    }
+    &__btn {
+        &-complete {
+            color: #95faa3;
+        }
+        &-edit {
+            color: #56cfff;
+        }
+        &-delete {
+            color: rgb(255, 122, 98);
+        }
+    }
+    /* AddTodo.js */
+    &-add { 
+        display: flex;
+        padding: 15px;
+        margin: 0 auto;
+        border-radius: 15px;
+        border: 1px solid white;
+        flex-direction: column;
+        &__container {
+            display: flex;
+            justify-content: space-around;
+        }
+        input {
+            display: flex;
+            width: 70%;
+            outline: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        input:focus,
+        button:focus {
+          outline: none;
+        }
+        &__filter {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 15px;
+        }
+        &__btn {
+            &-add {
+                display: flex;
+                width: 10vw;
+                text-align: center;
+                margin-left: 2vw;
+                button {
+                border: 0.1vw solid white;
+                background: none;
+                color: white;
+                padding: 10px 20px;
+                outline: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: 500;
+                }
+            }
+            &-active,
+            &-complete,
+            &-all {
+                border: 0.1vw solid white;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                padding: 1vw;
+                width: 15vw;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#i {
+    font-size: $btn-todo;
   }
-  .todo input {
-    cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-  }
-  
-  .todo__btn__complete,
-  .todo__btn__delete,
-  .todo__btn__edit {
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50%;
-    width: 7vw;
-  }
-  #i {
-    font-size: 7vw;
-  }
-  .todo__btn__complete {
-    color: #95faa3;
-  }
-  .todo__btn__edit {
-    color: #56cfff;
-  }
-  .todo__btn__delete {
-    color: rgb(255, 122, 98);
-  }
-  input:focus,
-  button:focus {
-    outline: none;
-  }
-  .todo__input {
-    width: 55vw;
-  }
-  .footer {
+
+.footer {
     color: white;
     fill: white;
     bottom: 0;
     width: 100%;
     text-align: center;
     margin: 10px auto;
-  }
+}
+/* Responsive/adaptive */
+
+  
+  
+  
+  
   

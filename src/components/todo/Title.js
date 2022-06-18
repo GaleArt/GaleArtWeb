@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Title() {
   return (
-    <div className="title">
-      <h1>Напоминатель</h1>
+    <div className="todo__title">
+      <h2>Напоминатель</h2>
     </div>
   );
 }
