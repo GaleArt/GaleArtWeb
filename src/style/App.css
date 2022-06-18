@@ -1,10 +1,12 @@
 @charset "UTF-8";
-/* Const */
+/* Const ToDo */
+/* Размер бокса Todo */
+/* Размер кнопок в меню todo */
 /* Размер кнопок в списке todo */
 /* Components */
 .App {
   display: grid;
-  align-items: center;
+  align-content: center;
   justify-content: center;
 }
 
@@ -18,6 +20,7 @@
 
 .todo {
   /* Todo.js */
+  width: 400px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 10px 20px;
@@ -45,7 +48,7 @@
   font-size: 16px;
   font-weight: 500;
   color: white;
-  width: 55vw;
+  width: 100%;
 }
 
 .todo button {
@@ -55,6 +58,12 @@
   cursor: pointer;
   border-radius: 50%;
   width: 30px;
+}
+
+.todo-menu {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .todo__btn-complete {
@@ -70,6 +79,7 @@
 }
 
 .todo-add {
+  width: 400px;
   display: flex;
   padding: 15px;
   margin: 0 auto;
@@ -104,9 +114,8 @@
 
 .todo-add__btn-add {
   display: flex;
-  width: 10vw;
+  width: 100px;
   text-align: center;
-  margin-left: 2vw;
 }
 
 .todo-add__btn-add button {
@@ -122,13 +131,12 @@
 }
 
 .todo-add__btn-active, .todo-add__btn-complete, .todo-add__btn-all {
+  width: 100px;
   border: 0.1vw solid white;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  padding: 1vw;
-  width: 15vw;
   text-align: center;
 }
 

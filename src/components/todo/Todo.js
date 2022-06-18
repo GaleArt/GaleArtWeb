@@ -23,7 +23,7 @@ export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,})
         className="todo__input"
         onChange={handleChange}
       />
-      <div>
+      <div className="todo-menu">
         <button
           className="todo__btn-complete"
           onClick={() => toggleComplete(todo)}

@@ -1,9 +1,12 @@
-/* Const */
-$btn-todo: 30px; /* Размер кнопок в списке todo */
+/* Const ToDo */
+$todo-w: 400px;         /* Размер бокса Todo */
+$btn-addtodo: 100px;    /* Размер кнопок в меню todo */
+$btn-todo: 30px;        /* Размер кнопок в списке todo */
+
 /* Components */
 .App {
     display: grid;
-    align-items: center;
+    align-content: center;
     justify-content: center;
 }
 
@@ -17,6 +20,7 @@ $btn-todo: 30px; /* Размер кнопок в списке todo */
 
 .todo { 
     /* Todo.js */
+    width: $todo-w;
     margin: 0 auto;
     margin-top: 20px;
     padding: 10px 20px;
@@ -40,7 +44,7 @@ $btn-todo: 30px; /* Размер кнопок в списке todo */
         font-size: 16px;
         font-weight: 500;
         color: white;
-        width: 55vw;
+        width: 100%;
     }
     button {
         background: none;
@@ -49,6 +53,11 @@ $btn-todo: 30px; /* Размер кнопок в списке todo */
         cursor: pointer;
         border-radius: 50%;
         width: $btn-todo;
+    }
+    &-menu {
+        width: 4 * $btn-todo;
+        display: flex;
+        justify-content: space-between;
     }
     &__btn {
         &-complete {
@@ -63,6 +72,7 @@ $btn-todo: 30px; /* Размер кнопок в списке todo */
     }
     /* AddTodo.js */
     &-add { 
+        width: $todo-w;
         display: flex;
         padding: 15px;
         margin: 0 auto;
@@ -92,9 +102,8 @@ $btn-todo: 30px; /* Размер кнопок в списке todo */
         &__btn {
             &-add {
                 display: flex;
-                width: 10vw;
+                width: $btn-addtodo;
                 text-align: center;
-                margin-left: 2vw;
                 button {
                 border: 0.1vw solid white;
                 background: none;
@@ -110,13 +119,12 @@ $btn-todo: 30px; /* Размер кнопок в списке todo */
             &-active,
             &-complete,
             &-all {
+                width: $btn-addtodo;
                 border: 0.1vw solid white;
                 border-radius: 5px;
                 font-size: 16px;
                 font-weight: 500;
                 cursor: pointer;
-                padding: 1vw;
-                width: 15vw;
                 text-align: center;
             }
         }

@@ -12,6 +12,7 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 import { db } from "./components/firebase";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function App() {
   const [todos, setTodos] = React.useState([]);
@@ -39,14 +40,10 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="todo__box">
+      <div className="content">
+        <div><Title /></div>
+        <div><AddTodo /></div>
         <div>
-          <Title />
-        </div>
-        <div>
-          <AddTodo />
-        </div>
-        <div className="todo__container">
           {todos.map((todo) => (
             <Todo
               key={todo.id}
@@ -57,6 +54,17 @@ function App() {
             />
           ))}
         </div>
+      </div>
+
+      <div className="content">
+        Календарик
+      </div>
+
+      <div className="content">
+        Ссылычи
+      </div>
+
+      <div className="footer"><GitHubIcon /></div>
 
         <div class="scene">
           <div class="space">
@@ -64,7 +72,6 @@ function App() {
               <div class="comet"><div class="comet-inner"></div></div>
           </div>
         </div>
-      </div>
     </div>
   );
 }
