@@ -1,0 +1,136 @@
+.App {
+    align-items: center;
+    justify-content: center;
+  }
+  .title h1 {
+    color: white;
+    text-align: center;
+    margin: 1vw 0;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+  
+  .addtodo {
+    width: 90vw;
+    display: flex;
+    padding: 2vw;
+    margin: 0 auto;
+    border-radius: 1.5vw;
+    border: 0.1vw solid white;
+    flex-direction: column;
+  }
+  
+  .addtodo__container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .addtodo__input {
+    display: flex;
+    width: 70vw;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .addtodo__btn__add {
+    display: flex;
+    width: 10vw;
+    text-align: center;
+    margin-left: 2vw;
+  }
+  .addtodo__btn__add button {
+    border: 0.1vw solid white;
+    background: none;
+    color: white;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .addtodo__filter {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vw;
+  }
+  .addtodo__btn__active,
+  .addtodo__btn__complete,
+  .addtodo__btn__all {
+    border: 0.1vw solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1vw;
+    width: 15vw;
+    text-align: center;
+  }
+  
+  
+  
+  
+  .todo__box {
+  
+  }
+  .todo__container {
+    margin: 0 auto;
+  }
+  .todo {
+    margin: 0 auto;
+    width: 80vw;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1vw solid white;
+  }
+  .todo input {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .todo__btn__complete,
+  .todo__btn__delete,
+  .todo__btn__edit {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 7vw;
+  }
+  #i {
+    font-size: 7vw;
+  }
+  .todo__btn__complete {
+    color: #95faa3;
+  }
+  .todo__btn__edit {
+    color: #56cfff;
+  }
+  .todo__btn__delete {
+    color: rgb(255, 122, 98);
+  }
+  input:focus,
+  button:focus {
+    outline: none;
+  }
+  .todo__input {
+    width: 55vw;
+  }
+  .footer {
+    color: white;
+    fill: white;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
+  

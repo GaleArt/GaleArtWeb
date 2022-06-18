@@ -1,4 +1,4 @@
-import './style/App.css';
+import './style/App.min.css';
 import React from "react";
 import Title from "./components/todo/Title";
 import AddTodo from "./components/todo/AddTodo";

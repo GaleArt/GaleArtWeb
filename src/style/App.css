@@ -2,6 +2,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .title h1 {
   color: white;
   text-align: center;
@@ -9,8 +10,6 @@
   font-weight: 400;
   letter-spacing: 0.04em;
 }
-
-
 
 .addtodo {
   width: 90vw;
@@ -26,6 +25,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .addtodo__input {
   display: flex;
   width: 70vw;
@@ -33,12 +33,14 @@
   font-size: 16px;
   font-weight: 500;
 }
+
 .addtodo__btn__add {
   display: flex;
   width: 10vw;
   text-align: center;
   margin-left: 2vw;
 }
+
 .addtodo__btn__add button {
   border: 0.1vw solid white;
   background: none;
@@ -50,11 +52,13 @@
   cursor: pointer;
   font-weight: 500;
 }
+
 .addtodo__filter {
   display: flex;
   justify-content: space-around;
   padding-top: 5vw;
 }
+
 .addtodo__btn__active,
 .addtodo__btn__complete,
 .addtodo__btn__all {
@@ -68,15 +72,10 @@
   text-align: center;
 }
 
-
-
-
-.todo__box {
-
-}
 .todo__container {
   margin: 0 auto;
 }
+
 .todo {
   margin: 0 auto;
   width: 80vw;
@@ -88,6 +87,7 @@
   align-items: center;
   border: 0.1vw solid white;
 }
+
 .todo input {
   cursor: pointer;
   background: none;
@@ -108,25 +108,32 @@
   border-radius: 50%;
   width: 7vw;
 }
+
 #i {
   font-size: 7vw;
 }
+
 .todo__btn__complete {
   color: #95faa3;
 }
+
 .todo__btn__edit {
   color: #56cfff;
 }
+
 .todo__btn__delete {
-  color: rgb(255, 122, 98);
+  color: #ff7a62;
 }
+
 input:focus,
 button:focus {
   outline: none;
 }
+
 .todo__input {
   width: 55vw;
 }
+
 .footer {
   color: white;
   fill: white;
@@ -135,3 +142,4 @@ button:focus {
   text-align: center;
   margin: 10px auto;
 }
+/*# sourceMappingURL=App.css.map */
