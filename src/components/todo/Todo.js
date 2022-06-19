@@ -16,7 +16,7 @@ export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,})
   };
   return (
     <div className="todo">
-      <input
+      <textarea
         style={{ textDecoration: todo.completed && "line-through" }}
         type="text"
         value={todo.title === "" ? newTitle : todo.title}

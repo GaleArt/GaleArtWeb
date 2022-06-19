@@ -40,7 +40,7 @@
   letter-spacing: 0.04em;
 }
 
-.todo input {
+.todo textarea {
   cursor: pointer;
   background: none;
   border: none;
@@ -49,6 +49,7 @@
   font-weight: 500;
   color: white;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .todo button {
