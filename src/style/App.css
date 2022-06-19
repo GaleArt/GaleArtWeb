@@ -189,5 +189,15 @@
   margin: 10px auto;
 }
 
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a svg {
+  width: 40px;
+  height: 40px;
+}
+
 /* Responsive/adaptive */
 /*# sourceMappingURL=App.css.map */

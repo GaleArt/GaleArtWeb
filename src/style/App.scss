@@ -159,6 +159,14 @@ $clr-todo: hsla(240,50%,100%,0.1); /* Для ввода Todo */
     width: 100%;
     text-align: center;
     margin: 10px auto;
+    a {
+        text-decoration:none;
+        color: $clr;
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
 }
 /* Responsive/adaptive */
 

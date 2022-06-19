@@ -64,7 +64,10 @@ function App() {
         Ссылычи
       </div>
 
-      <div className="footer"><GitHubIcon /></div>
+      <div className="footer">
+        <a href="https://github.com/GaleArt" target="_blank"><GitHubIcon /></a>
+        
+      </div>
 
         <div class="scene">
           <div class="space">
