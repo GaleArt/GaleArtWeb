@@ -1,7 +1,28 @@
-/* Const ToDo */
+/* Consts, Mixins ToDo */
 $todo-w: 400px;         /* Размер бокса Todo */
+$todo-brdr: 15px;       /* border-radius у форм */
+$btn-brdr: 5px;         /* border-radius у кнопок */
 $btn-addtodo: 100px;    /* Размер кнопок в меню todo */
 $btn-todo: 30px;        /* Размер кнопок в списке todo */
+
+/* Цветовая схема и текст */
+$clr: hsla(0,0%,100%,1);       /* Основной цвет */
+$clr-todo: hsla(240,50%,100%,0.1); /* Для ввода Todo */
+@mixin todo-colors () {
+    color: $clr;
+    background: none;
+    outline: none;
+    resize:none;
+    border: 1px solid $clr;
+    fill: $clr;
+}
+@mixin todo-txt () {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 /* Components */
 .App {
@@ -20,40 +41,37 @@ $btn-todo: 30px;        /* Размер кнопок в списке todo */
 
 .todo { 
     /* Todo.js */
+    @include todo-colors();
     width: $todo-w;
     margin: 0 auto;
     margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: $todo-brdr;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 0.1vw solid white;
     &__title h2 {
-        color: white;
+        @include todo-colors();
+        border: none;
         text-align: center;
-        margin: 1vw 0;
         font-weight: 400;
         letter-spacing: 0.04em;
     }
     textarea {
-        cursor: pointer;
-        background: none;
+        @include todo-colors();
         border: none;
-        outline: none;
+        cursor: pointer;
         font-size: 16px;
         font-weight: 500;
-        color: white;
         width: 100%;
-        box-sizing: border-box;
     }
     button {
         background: none;
         border: none;
-        outline: none;
         cursor: pointer;
         border-radius: 50%;
         width: $btn-todo;
+        height: $btn-todo;
     }
     &-menu {
         width: 4 * $btn-todo;
@@ -72,22 +90,23 @@ $btn-todo: 30px;        /* Размер кнопок в списке todo */
         }
     }
     /* AddTodo.js */
-    &-add { 
-        width: $todo-w;
+    &-add {
+        @include todo-colors();
         display: flex;
-        padding: 15px;
+        width: $todo-w;
+        padding: 10px;
         margin: 0 auto;
-        border-radius: 15px;
-        border: 1px solid white;
+        border-radius: $todo-brdr;
         flex-direction: column;
         &__container {
             display: flex;
             justify-content: space-around;
         }
         input {
+            @include todo-colors();
+            background: $clr-todo;
             display: flex;
             width: 70%;
-            outline: none;
             font-size: 16px;
             font-weight: 500;
         }
@@ -106,12 +125,9 @@ $btn-todo: 30px;        /* Размер кнопок в списке todo */
                 width: $btn-addtodo;
                 text-align: center;
                 button {
-                border: 0.1vw solid white;
-                background: none;
-                color: white;
-                padding: 10px 20px;
-                outline: none;
-                border-radius: 5px;
+                @include todo-colors();
+                padding: 10px;
+                border-radius: $btn-brdr;
                 font-size: 16px;
                 cursor: pointer;
                 font-weight: 500;
@@ -120,9 +136,9 @@ $btn-todo: 30px;        /* Размер кнопок в списке todo */
             &-active,
             &-complete,
             &-all {
+                @include todo-colors();
                 width: $btn-addtodo;
-                border: 0.1vw solid white;
-                border-radius: 5px;
+                border-radius: $btn-brdr;
                 font-size: 16px;
                 font-weight: 500;
                 cursor: pointer;

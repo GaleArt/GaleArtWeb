@@ -1,8 +1,13 @@
 @charset "UTF-8";
-/* Const ToDo */
+/* Consts, Mixins ToDo */
 /* Размер бокса Todo */
+/* border-radius у форм */
+/* border-radius у кнопок */
 /* Размер кнопок в меню todo */
 /* Размер кнопок в списке todo */
+/* Цветовая схема и текст */
+/* Основной цвет */
+/* Для ввода Todo */
 /* Components */
 .App {
   display: grid;
@@ -20,45 +25,57 @@
 
 .todo {
   /* Todo.js */
+  color: white;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 1px solid white;
+  fill: white;
   width: 400px;
   margin: 0 auto;
   margin-top: 20px;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 0.1vw solid white;
   /* AddTodo.js */
 }
 
 .todo__title h2 {
   color: white;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 1px solid white;
+  fill: white;
+  border: none;
   text-align: center;
-  margin: 1vw 0;
   font-weight: 400;
   letter-spacing: 0.04em;
 }
 
 .todo textarea {
-  cursor: pointer;
+  color: white;
   background: none;
-  border: none;
   outline: none;
+  resize: none;
+  border: 1px solid white;
+  fill: white;
+  border: none;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  color: white;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .todo button {
   background: none;
   border: none;
-  outline: none;
   cursor: pointer;
   border-radius: 50%;
   width: 30px;
+  height: 30px;
 }
 
 .todo-menu {
@@ -80,12 +97,17 @@
 }
 
 .todo-add {
-  width: 400px;
+  color: white;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 1px solid white;
+  fill: white;
   display: flex;
-  padding: 15px;
+  width: 400px;
+  padding: 10px;
   margin: 0 auto;
   border-radius: 15px;
-  border: 1px solid white;
   flex-direction: column;
 }
 
@@ -95,9 +117,15 @@
 }
 
 .todo-add input {
+  color: white;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 1px solid white;
+  fill: white;
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   width: 70%;
-  outline: none;
   font-size: 16px;
   font-weight: 500;
 }
@@ -120,11 +148,13 @@
 }
 
 .todo-add__btn-add button {
-  border: 0.1vw solid white;
-  background: none;
   color: white;
-  padding: 10px 20px;
+  background: none;
   outline: none;
+  resize: none;
+  border: 1px solid white;
+  fill: white;
+  padding: 10px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
@@ -132,8 +162,13 @@
 }
 
 .todo-add__btn-active, .todo-add__btn-complete, .todo-add__btn-all {
+  color: white;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 1px solid white;
+  fill: white;
   width: 100px;
-  border: 0.1vw solid white;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
