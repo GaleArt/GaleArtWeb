@@ -2,6 +2,7 @@ import React from "react";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
+import TextareaAutosize from 'react-textarea-autosize';
 export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,}) {
   const [newTitle, setNewTitle] = React.useState(todo.title);
 
@@ -16,7 +17,7 @@ export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,})
   };
   return (
     <div className="todo">
-      <textarea
+      <TextareaAutosize
         style={{ textDecoration: todo.completed && "line-through" }}
         type="text"
         value={todo.title === "" ? newTitle : todo.title}
